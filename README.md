@@ -1,6 +1,6 @@
 # gitcredits
 
-**Roll movie-style credits for your git repo — right in the terminal.**
+**`Git log` doesn't do them justice. Turn your contributors into movie stars.**
 
 <p align="center">
   <img src="assets/demo.gif" alt="gitcredits demo" width="720">
@@ -29,7 +29,7 @@ cd your-repo
 gitcredits
 ```
 
-That's it. Navigate into any git repository and run `gitcredits`.
+That's it. Navigate into any Git repository and run `gitcredits`.
 
 ### Themes
 
