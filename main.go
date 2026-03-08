@@ -445,11 +445,11 @@ const (
 
 // Rain column state
 type rainColumn struct {
-	headY    int
-	speed    int // ticks per advance
-	tickAcc  int
-	length   int // trail length
-	active   bool
+	headY   int
+	speed   int // ticks per advance
+	tickAcc int
+	length  int // trail length
+	active  bool
 }
 
 // star field background
@@ -988,11 +988,15 @@ func (m model) viewDefault() string {
 }
 
 func main() {
-	// parse --theme flag
+	// parse flags
 	theme := "default"
+	output := ""
 	for i, arg := range os.Args[1:] {
 		if arg == "--theme" && i+1 < len(os.Args[1:]) {
 			theme = os.Args[i+2]
+		}
+		if arg == "--output" && i+1 < len(os.Args[1:]) {
+			output = os.Args[i+2]
 		}
 	}
 
@@ -1003,6 +1007,18 @@ func main() {
 	if w, h, err := term.GetSize(int(os.Stdout.Fd())); err == nil {
 		width = w
 		height = h
+	}
+
+	// GIF output mode
+	if output != "" {
+		credits := buildCredits(info, 80)
+		cards := buildMatrixCards(info, 80, 24)
+		if err := generateGIF(output, theme, credits, len(cards)); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Printf("GIF saved: %s\n", output)
+		return
 	}
 
 	var m model

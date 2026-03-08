@@ -43,6 +43,23 @@ gitcredits --theme matrix
   <img src="assets/matrix-demo.gif" alt="gitcredits matrix theme" width="720">
 </p>
 
+### Export to GIF
+
+Save the credits as a high-quality GIF — perfect for READMEs, presentations, or sharing.
+
+```bash
+gitcredits --output credits.gif
+gitcredits --output credits.gif --theme matrix
+```
+
+Requires [VHS](https://github.com/charmbracelet/vhs) and [ffmpeg](https://ffmpeg.org/):
+
+```bash
+brew install vhs ffmpeg
+```
+
+VHS records the terminal in real-time, and ffmpeg converts it to an optimized GIF with 2-pass palette generation for maximum quality.
+
 ### Controls
 
 | Key | Action |
@@ -64,7 +81,8 @@ GitHub metadata (stars, description, license) requires [`gh` CLI](https://cli.gi
 
 - **git** (required) — commit history, contributors, repo info
 - **Go 1.21+** — for `go install`
-- [`gh` CLI](https://cli.github.com/) (optional) — enables GitHub stars, license, language, and description. Works without it — you'll just get git-only data.
+- [`gh` CLI](https://cli.github.com/) (optional) — enables GitHub stars, license, language, and description
+- [VHS](https://github.com/charmbracelet/vhs) + [ffmpeg](https://ffmpeg.org/) (optional) — required for `--output` GIF export
 
 ## License
 
