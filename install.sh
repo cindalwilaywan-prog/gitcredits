@@ -2,7 +2,7 @@
 set -e
 
 REPO="Higangssh/gitcredits"
-INSTALL_DIR="/usr/local/bin"
+INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 BINARY="gitcredits"
 
 # Detect OS
